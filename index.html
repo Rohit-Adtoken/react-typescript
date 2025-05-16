@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Page with AdToken Widget</title>
+
+
+
+    
+    <!-- ✅ Load the latest widget styles from your server -->
+    <link rel="stylesheet" href="http://localhost:5175/dist/ad-widget.css" />
+    <!-- ✅ Load the widget JavaScript from your server -->
+    <script type="module" src="http://localhost:5175/dist/ad-widget.js"></script>
+    <!-- ✅ Set the AdToken config before loading the widget -->
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- ✅ Widget container (ad widget will inject itself here) -->
+    <div id="adtoken-widget"></div>
+
+    <!-- React entry point -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
